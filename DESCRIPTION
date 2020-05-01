@@ -1,0 +1,38 @@
+Package: rbc
+Type: Package
+Title: Rule-Based Classification of Border Crossings, Using Migration Histories
+Version: 0.0.1
+Authors@R: c(
+    person(given = "John",
+           family = "Bryant",
+	         email = "john@bayesiandemography.com",
+	         role = c("cre", "aut")),
+    person(given = "Pubudu",
+           family = "Senanake",
+	         role = "aut"),
+    person(given = "Munir",
+           family = "Shah",
+	         role = "aut"),
+	  person(given = "Lucianne",
+           family = "Varn",
+	         role = "aut"))
+Description: Functions for calculating migration status under rules
+    based on migration history, such as the 12/16 rule.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+RoxygenNote: 7.0.2
+Imports: Rcpp,
+    lubridate,
+    methods,
+    parallel
+Suggests: dplyr,
+    knitr,
+    purrr,
+    purrrlyr,
+    rmarkdown,
+    stringr,
+    testthat,
+    tidyr
+VignetteBuilder: knitr
